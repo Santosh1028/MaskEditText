@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:hint="#### #### #### ####"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        app:mask="#### #### #### ####"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/card"/>
+
+    <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/phone"
+        android:hint="9876543210"
+        android:inputType="phone"
+        app:keep_hint="true"
+        app:mask="+91 ### ### ####"/>
+
+    <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:hint="##:##:####"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/Date"
+        android:inputType="date"
+        app:mask="##:##:####"/>
+
+    <Button
+        android:id="@+id/showButton"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Show"
+        />
+</LinearLayout>
